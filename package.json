@@ -1,35 +1,36 @@
 {
-  "name": "javascript-action",
+  "name": "factorio-publish-mod-action",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "Factorio Publish Mod Action",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
-    "test": "jest",
-    "all": "npm run lint && npm run prepare && npm run test"
+    "all": "npm run lint && npm run prepare"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/TGNThump/factorio-publish-mod-action.git"
   },
   "keywords": [
     "GitHub",
     "Actions",
-    "JavaScript"
+    "JavaScript",
+    "Factorio"
   ],
-  "author": "",
+  "author": "TGNThump",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/TGNThump/factorio-publish-mod-action/issues"
   },
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/TGNThump/factorio-publish-mod-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5"
+    "@actions/core": "^1.2.5",
+    "web-request": "^1.0.7",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.24.0",
-    "eslint": "^7.4.0",
-    "jest": "^26.1.0"
+    "eslint": "^7.4.0"
   }
 }

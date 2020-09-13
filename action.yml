@@ -1,13 +1,21 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Factorio Publish Mod Action'
+description: 'Publish a factorio mod zip to the mod portal.'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  mod_portal_username:
+    description: 'Factorio mod portal username'
     required: true
-    default: '1000'
-outputs:
-  time: # output will be available to future steps
-    description: 'The message to output'
+  mod_portal_password:
+    description: 'Factorio mod portal password. Use a secret for this'
+    required: true
+  mod_name:
+    description: 'Factorio mod name, as per the mod portal url'
+    required: true
+  asset_path:
+    description: 'Asset path of the zip file.'
+    required: true
+  asset_name:
+    description: 'Name of the zip file'
+    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'
