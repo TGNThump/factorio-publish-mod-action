@@ -1,5 +1,8 @@
 name: 'Factorio Publish Mod Action'
 description: 'Publish a factorio mod zip to the mod portal.'
+branding:
+  icon: upload-cloud
+  color: orange
 inputs:
   mod_portal_username:
     description: 'Factorio mod portal username'
