@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/TGNThump/factorio-publish-mod-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5",
+    "@actions/core": "^1.9.1",
     "web-request": "^1.0.7",
     "request": "^2.88.2"
   },
